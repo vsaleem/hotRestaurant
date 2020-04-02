@@ -5,7 +5,7 @@
 // ===============================================================================
 
 var tableData = require("../data/tableData");
-var waitListData = require("../data/waitinglistData");
+var waitListData = require("../data/waitinglistData")
 
 
 // ===============================================================================
@@ -25,9 +25,9 @@ module.exports = function(app) {
   });
 
   // another get request that sends back data of the waitlist
-  app.get("/api/waitlist"),function(req, res) {
+  app.get("/api/waitinglist",function(req, res) {
     res.json(waitListData);
-  }
+  });
 
   // API POST Requests
   // Below code handles when a user submits a form and thus submits data to the server.
