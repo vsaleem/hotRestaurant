@@ -4,7 +4,6 @@
 // ==============================================================================
 
 const express = require("express"); // the server & middleware
-const path = require("path"); // helper to create paths to files
 
 // ==============================================================================
 // EXPRESS CONFIGURATION
@@ -30,10 +29,10 @@ app.use(express.json());
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-require("./routes/apiRoutes")(app);
+// require("./routes/apiRoutes")(app);
 
 // require htmlRoutes, too, using the same pattern
-require("./routes/htmlRoutes")(app);
+// require("./routes/htmlRoutes")(app);
 
 
 // =============================================================================
