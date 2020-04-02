@@ -32,7 +32,7 @@
 			<div class="col-lg-12">
 
 				<!-- Reservation Page -->
-				<div class="panel panel-default">
+				<div class="panel panel-default"> 
 					<div class="panel-heading">
 						<h4 class="panel-title">Table Reservation</h4>
 					</div>
@@ -72,7 +72,7 @@
     <!--Fotter-->
     <footer class="footer">
       <div class="container">
-        <p><a href="../data/tableData.js">API Table Link</a> | <a href="/..data/waitinglistData.js">API Wait List</a> </p>
+	        <p><a href="../data/tableData.js">API Table Link</a> | <a href="../data/waitinglistData.js">API Wait List</a></p>
       </div>
     </footer>
 
@@ -94,8 +94,10 @@
 
     // Here we grab the form elements
     var newReservation = {
-      customerName: $("#reserve-name").val().trim(),
-      // more here
+      customerName: $("#reserve_name").val().trim(),
+      phoneNumber: $('#reserve_phone').val().trim(),
+			customerEmail: $('#reserve_email').val().trim(),
+			customerID: $('#reserve_uniqueID').val().trim()
     };
 
     console.log(newReservation);
@@ -108,23 +110,19 @@
     $.post("/api/tables", newReservation,
       function(data) {
 
-        // If a table is available... tell user they are booked.
-        // remember, if app.post to /api/tables in your apiRoutes file
-        // returns true, data === true here.
-        if (data) {
-          // alert a happy success message
+        if (data === true) {
+          alert("Yay! You are officially booked!")
         }
 
-        // if app.post to /api/tables in your apiRoutes file
-        // returns false, data === false
-        // If a table is available... tell user they on the waiting list.
-        else {
-          // alert an empathetic sorry message
+        if (data === false) {
+          alert("Sorry you are on the wait list!")
         }
 
         // Clear the form when submitting
-        $("#reserve-name").val("");
-        // clear the remaining form elements
+        $("#reserve_name").val("");
+        $("#reserve_phone").val("");
+			  $('#reserve_email').val("");
+			  $('#reserve_uniqueID').val("");
 
 
       });
@@ -132,3 +130,4 @@
   });
 
 </script>
+
