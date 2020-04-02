@@ -4,8 +4,8 @@
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
 
-var tableData = require("tbd");
-var waitListData = require("tbd");
+var tableData = require("../data/tableData");
+var waitListData = require("../data/waitinglistData");
 
 
 // ===============================================================================
@@ -21,10 +21,13 @@ module.exports = function(app) {
 
   app.get("/api/tables", function(req, res) {
     // send json of the table data
+    res.json(tableData)
   });
 
   // another get request that sends back data of the waitlist
-
+  app.get("/api/waitlist"),function(req, res) {
+    res.json(waitListData);
+  }
 
   // API POST Requests
   // Below code handles when a user submits a form and thus submits data to the server.
@@ -47,7 +50,11 @@ module.exports = function(app) {
     // else
     // push request.body into the wait list data array
     // and send back a json reponse that says "false"
-
+    if(tableData.length < 5){
+      tableData.push(req.body);
+    }else{
+      waitListData.push(req.body);
+      res.json(false);    }
   });
 
   // ---------------------------------------------------------------------------
@@ -58,6 +65,7 @@ module.exports = function(app) {
     // Empty out the arrays of customers
     tableData.length = 0;
     // don't forget to clear the waitinglistData
+    waitListData.length = 0;
 
     res.json({ ok: true }); // send a response letting client know clear was a success
   });
