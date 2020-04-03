@@ -16,21 +16,21 @@ module.exports = function(app) {
   // In each of the below cases the user is shown an HTML page of content
   // ---------------------------------------------------------------------------
 
-  app.get("/tables", (request, reqponse ) => {
-    response.sendFile(path.join(__dirname,"tables.html"))
+  app.get("/tables", (request, response ) => {
+    response.sendFile(path.join(__dirname,"../public/tables.html"))
   });
 
   // another get route to serve the reservations page
 
-  app.get("/reserve", (request, reqponse ) => {
-    response.sendFile(path.join(__dirname,"reserve.html"))
+  app.get("/reserve", (request, response ) => {
+    response.sendFile(path.join(__dirname,"../public/reserve.html"))
   });
 
   // a final route to serve the home page in the case of any other route
   // you can use "*" instead of "/"
 
-  app.get("/", (request, reqponse ) => {
-    response.sendFile(path.join(__dirname,"home.html"))
+  app.get("*", (request, response ) => {
+    response.sendFile(path.join(__dirname,"../public/home.html"))
   });
 
 };
