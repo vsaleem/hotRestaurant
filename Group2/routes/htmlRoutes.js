@@ -5,7 +5,6 @@
 
 const path = require("path"); // the server & middleware
 
-
 // ===============================================================================
 // ROUTING
 // ===============================================================================
@@ -16,20 +15,20 @@ module.exports = function(app) {
   // In each of the below cases the user is shown an HTML page of content
   // ---------------------------------------------------------------------------
 
-  app.get("/tables", (request, reqponse ) => {
+  app.get("/tables", (request, response ) => {
     response.sendFile(path.join(__dirname,"tables.html"))
   });
 
   // another get route to serve the reservations page
 
-  app.get("/reserve", (request, reqponse ) => {
+  app.get("/reserve", (request, response ) => {
     response.sendFile(path.join(__dirname,"reserve.html"))
   });
 
   // a final route to serve the home page in the case of any other route
   // you can use "*" instead of "/"
 
-  app.get("/", (request, reqponse ) => {
+  app.get("/", (request, response ) => {
     response.sendFile(path.join(__dirname,"home.html"))
   });
 
