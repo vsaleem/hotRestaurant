@@ -9,35 +9,30 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/218afa11de.js" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="container">
+  <div id="form" class="container">
 
 		<div class="jumbotron">
 			<h1 class="text-center"><span class="fas fa-fire-alt" style="color:red"></span> Hot Restaurant</h1>
-			<hr>
 			<h2 class="text-center">Make your reservation</h2>
-			<br>
-
 			<div class="text-center">
-        <a href="./tables.html"><button type="button" class="btn btn-lg btn-primary"><span class="fas fa-list-alt"></span> View Tables</button></a>
-				<a href="./home.html"><button type="button" class="btn btn-lg btn-danger"><span class="fas fa-home"></span></button></a>
+        <a href="./tables.html"><button id="btn" type="button" class="btn btn-lg"><span class="fas fa-list-alt"></span> View Tables</button></a>
+				<a href="./home.html"><button id="btn1" type="button" class="btn btn-lg"><span class="fas fa-home"></span></button></a>
 			</div>
     </div>
     
     <div class="row">
 			<div class="col-lg-12">
-
 				<!-- Reservation Page -->
 				<div class="panel panel-default"> 
 					<div class="panel-heading">
-						<h4 class="panel-title">Table Reservation</h4>
+						<h4 class="panel">Table Reservation</h4>
 					</div>
 					<div class="panel-body">
-
 						<form role="form">
 
 							<div class="form-group">
@@ -60,21 +55,23 @@
 								<input type="text" class="form-control" id="reserve_uniqueID">
 							</div>
 
-							<button type="submit" class="btn btn-primary submit">Submit</button>
+							<button id="btn2" type="submit" class="btn submit">Submit</button>
 						</form>
-
 					</div>
 				</div>
-
 			</div>
     </div>
 
-    <!--Fotter-->
-    <footer class="footer">
-      <div class="container">
-	        <p><a href="../data/tableData.js">API Table Link</a> | <a href="../data/waitinglistData.js">API Wait List</a></p>
+    <!--Footer-->
+  <footer>
+      <div id="fotter" class="container-fluid">
+          <div class="row text-center">
+              <div class="col-12">
+                <p><a href="../data/tableData.js">API Table Link</a> | <a href="../data/waitinglistData.js">API Wait List</a></p>
+              </div>
+          </div>
       </div>
-    </footer>
+  </footer>
 
 </div>
 
@@ -102,12 +99,9 @@
 
     console.log(newReservation);
 
-    // This line is the magic. Its very similar to the standard ajax function we used.
-    // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-    // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-    // depending on if a tables is available or not.
+    var currentURL = window.location.origin;
 
-    $.post("/api/tables", newReservation,
+    $.post(currentURL + "/api/tables", newReservation,
       function(data) {
 
         if (data === true) {
