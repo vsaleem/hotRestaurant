@@ -59,8 +59,8 @@ MIT License
 
 
   ### FOLLOW ME ON GITHUB
-  
-  ![location](https://img.shields.io/badge/Location-Maryland-blue)
+  ![bioImage](https://avatars0.githubusercontent.com/u/59583325?v=4&s=200)
+  [![](https://img.shields.io/badge/github-vsaleem-brightgreen?style=plastic)](https://www.github.com/vsaleem)
   ![followers](https://img.shields.io/badge/Followers-10-success) 
   ![location](https://img.shields.io/badge/Location-Baltimore_Maryland-ff69b4) 
 
