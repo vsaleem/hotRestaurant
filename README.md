@@ -50,7 +50,6 @@ MIT License
 
 ## Tests
 
-![location](https://img.shields.io/badge/Location-Baltimore_Maryland-blue) 
 
 
 ## Questions
