@@ -1,0 +1,57 @@
+
+# Hot Restaurant App
+
+## DESCRIPTION
+
+Basic app demonstrating Node and Express with jQuery. Overall purpose is to help schedule reservation requests. Restaurant has just 5 tables available. First five requests get a reservation, every request after that is sent to the waiting list.
+
+
+## TABLE OF CONTENTS
+
+* [Description](#Description)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributors](#Contributors)
+* [Tests](#Tests)
+* [Questions](#Questions)
+
+
+
+## Installation
+
+
+
+## Usage
+
+
+
+## License
+
+MIT License
+
+## Contributors
+
+[![](https://img.shields.io/badge/github-altays-brightgreen?style=plastic)](https://www.github.com/altays)
+
+## Tests
+
+![location](https://img.shields.io/badge/Location-Baltimore_Maryland-blue) 
+
+
+## Questions
+
+
+
+
+  ### FOLLOW ME ON GITHUB
+  ![bioImage](https://avatars0.githubusercontent.com/u/59583325?v=4&s=200)
+  * ![location](https://img.shields.io/badge/Location-Maryland-blue)
+
+  ![followers](https://img.shields.io/badge/Followers-10-success) 
+  
+  ![location](https://img.shields.io/badge/Location-Baltimore_Maryland-ff69b4) 
+
+   
+
+
