@@ -32,7 +32,17 @@ MIT License
 
 ## Contributors
 
+[![](https://img.shields.io/badge/github-Antidetka-brightgreen?style=plastic)](https://www.github.com/Antidetka)
+![followers](https://img.shields.io/badge/Followers-9-brightgreen)
+![location](https://img.shields.io/badge/Location-Baltimore_Maryland-blue)
+
 [![](https://img.shields.io/badge/github-altays-brightgreen?style=plastic)](https://www.github.com/altays)
+![followers](https://img.shields.io/badge/Followers-10-brightgreen)
+![location](https://img.shields.io/badge/Location-Baltimore_Maryland-blue)
+
+[![](https://img.shields.io/badge/github-nrlong-brightgreen?style=plastic)](https://www.github.com/nrlong)
+![followers](https://img.shields.io/badge/Followers-11-brightgreen)
+![location](https://img.shields.io/badge/Location-Maryland-blue)
 
 ## Tests
 
@@ -46,7 +56,7 @@ MIT License
 
   ### FOLLOW ME ON GITHUB
   ![bioImage](https://avatars0.githubusercontent.com/u/59583325?v=4&s=200)
-  * ![location](https://img.shields.io/badge/Location-Maryland-blue)
+  ![location](https://img.shields.io/badge/Location-Maryland-blue)
 
   ![followers](https://img.shields.io/badge/Followers-10-success) 
   
