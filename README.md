@@ -20,23 +20,23 @@ This was a team project that was broken down into IV phases of development.  Tog
 
 ## Work Phases
 
-**Phase I: **
+**Phase I:**
 ```
 Backend team creates Express server. | Front end team works on the three html files.
 ```
-**Phase II: **
+**Phase II:**
 ```
 Backend team works on API Routing (create objects to hold table & waitlist; create routes to get/put data).
 Front end team works with backend team to coordinate the routes to the web pages they will be serving.
 ```
-**Phase III: **
+**Phase III:**
 ```
 Backend team creates the logic to handle reservation requests. Use Postman for testing.
 Front end team researches how ajax calls work to do GET & POST requestes.
 Then create code in tables.html to retrieve data from backend via GET
 Then create code in reserve.html to send data to the backend via POST.
 ```
-**Phase IV: **
+**Phase IV:**
 ```
 Run and debug app.
 ```
