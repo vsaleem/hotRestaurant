@@ -3,7 +3,7 @@
 
 ## DESCRIPTION
 
-Basic app demonstrating Node and Express with jQuery. Overall purpose is to help schedule reservation requests. Restaurant has just 5 tables available. First five requests get a reservation, every request after that is sent to the waiting list.
+This was a team project that was broken down into IV phases of development.  Together, we built a basic app demonstrating Node and Express with jQuery. Overall purpose is to help schedule reservation requests. Restaurant has just 5 tables available. First five requests get a reservation, every request after that is sent to the waiting list.
 
 
 ## TABLE OF CONTENTS
@@ -18,17 +18,46 @@ Basic app demonstrating Node and Express with jQuery. Overall purpose is to help
 
 
 
-## Installation
+## Work Phases
 
+**Phase I: **
+```
+Backend team creates Express server. | Front end team works on the three html files.
+```
+**Phase II: **
+```
+Backend team works on API Routing (create objects to hold table & waitlist; create routes to get/put data).
+Front end team works with backend team to coordinate the routes to the web pages they will be serving.
+```
+**Phase III: **
+```
+Backend team creates the logic to handle reservation requests. Use Postman for testing.
+Front end team researches how ajax calls work to do GET & POST requestes.
+Then create code in tables.html to retrieve data from backend via GET
+Then create code in reserve.html to send data to the backend via POST.
+```
+**Phase IV: **
+```
+Run and debug app.
+```
 
+## Project Management
 
-## Usage
+**Distributed coding approach**
 
+I served as the "Benevolent GitHub Dicatator," or BGD for this project.  I was designated to create a HotRestaurantsApp repository on GitHub and to be the Project Manager to proof, resolve conflicts, and merge commits to the master branch. 
+```
+Each team member pulled from this repository & created their own working branch.
+Once a member finishes a chunk of work, they pushed the GitHub repo & request a merge.
+I, as the BGD, merged pull requests as quickly as possible.
+Then, each team member did a git pull & git merge master when master branch changes.
 
+```
 
 ## License
 
 MIT License
+
 
 ## Contributors
 
@@ -50,12 +79,7 @@ MIT License
 
 ## Tests
 
-
-
-## Questions
-
-
-
+Postman
 
   ### FOLLOW ME ON GITHUB
   ![bioImage](https://avatars0.githubusercontent.com/u/59583325?v=4&s=200)
