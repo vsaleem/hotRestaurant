@@ -9,8 +9,8 @@ This was a team project that was broken down into IV phases of development.  Tog
 ## TABLE OF CONTENTS
 
 * [Description](#Description)
-* [Installation](#Installation)
-* [Usage](#Usage)
+* [Work Phases](#Work Phases)
+* [Project Management](#Project Management)
 * [License](#License)
 * [Contributors](#Contributors)
 * [Tests](#Tests)
